@@ -1,0 +1,2 @@
+"""Payment alert service."""
+

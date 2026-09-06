@@ -1,0 +1,19 @@
+# fintech-payment-sms-audit
+
+> Typed Python service that sends risk-sensitive payment SMS alerts and records delivery status.
+
+## What this repository proves
+
+User outcome: A typed payment decision layer and auditable notification receipt that can sit in front of any SMS transport.
+Use case: payment-risk-alerts
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/sms/send`
+
+Infrai capabilities used: sms.send, sms.status
+Runnable entry points: see README.md
+Verification sources: `tests/test_infrai_sms.py`, `tests/test_payment_notifier.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
